@@ -14,8 +14,8 @@ namespace Brickcell {
     /**
     * Read DHT sensor on %dataPin
     */
-    //% block="Read $data on pin $dataPin"
-    //% blockId=brickcell_dht11_read_dht
+    //% block="Read DHT11 $data on pin $dataPin"
+    //% blockId=brickcell_temperature_dht11_read_dht
     //% subcategory="temperature dht11"
     export function readDHT(data: dataType, dataPin: DigitalPin): number {
 
