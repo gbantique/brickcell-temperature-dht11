@@ -1,1 +1,5 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+serial.setBaudRate(BaudRate.BaudRate115200)
+basic.forever(function () {
+    serial.writeLine("" + (Brickcell.readDHT(dataType.temperature, DigitalPin.P0)))
+    basic.pause(2000)
+})
